@@ -298,7 +298,7 @@
   background-color: #fefefe;
 }
 
-.loader__img {
+.loader__txt {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -306,6 +306,10 @@
           transform: translate(-50%, -50%);
   -webkit-animation: elementDisappears 4s ease both;
           animation: elementDisappears 4s ease both;
+  color: white;
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 1px;
+  font-size: 24px;
 }
 
 .loader.loader--hidden {
@@ -892,7 +896,6 @@
 }
 
 .header__container .header__frame-a-02 .header__web-title-container .header__web-title {
-  background-color: rgba(29, 29, 29, 0.5);
   position: absolute;
   top: 50%;
   left: 0;
@@ -906,15 +909,6 @@
   padding-top: 25px;
   margin-top: -32px;
   color: #fff;
-  background: inherit;
-  background-image: url("/imgs/heart-1288420_1920_s1.jpg");
-  background-size: 140% auto;
-  background-repeat: no-repeat;
-  background-position: 20% 44%;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-filter: saturate(50%);
-          filter: saturate(50%);
   -webkit-transition: .3s;
   transition: .3s;
 }

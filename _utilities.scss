@@ -240,17 +240,17 @@
     padding-right: 16px;
     padding-top: 25px;
     margin-top: -32px;  
-    color: #fff;  
+    color: #fff; 
     
-    background: inherit;
-    background-image: url("/imgs/heart-1288420_1920_s1.jpg");   
-    background-size: 140% auto;  
-    background-repeat: no-repeat;
-    background-position: 20% 44%; 
-    -webkit-background-clip:text; 
-    color: transparent;   
-    filter:saturate(50%);
-      
+    // background: inherit;
+    // background-image: url("/imgs/heart-1288420_1920_s1.jpg");   
+    // background-size: 140% auto;  
+    // background-repeat: no-repeat;
+    // background-position: 20% 44%; 
+    // -webkit-background-clip:text; 
+    // color: transparent;   
+    // filter:saturate(50%);
+       
 
     @include media-query(x-small){
         font-size: 65px;
@@ -312,8 +312,8 @@
                 flex-basis: 80%;
             }
 
-            .header__web-title { 
-                background-color: rgba(29, 29, 29, 0.5);
+            .header__web-title {  
+                // background-color: rgba(29, 29, 29, 0.5);
                 
                 position: absolute;
                 top: 50%; 
