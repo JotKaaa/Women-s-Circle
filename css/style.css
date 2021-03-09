@@ -307,7 +307,7 @@
   -webkit-animation: elementDisappears 4s ease both;
           animation: elementDisappears 4s ease both;
   color: white;
-  font-family: "Amatic SC", cursive;
+  font-family: "raleway";
   letter-spacing: 1px;
   font-size: 24px;
 }
@@ -358,7 +358,7 @@
   }
 }
 
-.nav__logo {
+.nav__container .nav__logo {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
@@ -380,12 +380,12 @@
           align-items: center;
 }
 
-.nav__logo .nav__logo-href {
+.nav__container .nav__logo .nav__logo-href {
   height: 100%;
   width: 100%;
 }
 
-.nav__city-pic-container {
+.nav__container .nav__city-pic-container {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: pic;
@@ -408,7 +408,7 @@
 }
 
 @media (min-width: 460px) {
-  .nav__city-pic-container {
+  .nav__container .nav__city-pic-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -428,7 +428,7 @@
 }
 
 @media (min-width: 640px) {
-  .nav__city-pic-container {
+  .nav__container .nav__city-pic-container {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -436,7 +436,7 @@
   }
 }
 
-.nav__city-pic-container .nav__city-pic {
+.nav__container .nav__city-pic-container .nav__city-pic {
   background-image: url("../imgs/picto13.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -447,24 +447,24 @@
 }
 
 @media (min-width: 460px) {
-  .nav__city-pic-container .nav__city-pic {
+  .nav__container .nav__city-pic-container .nav__city-pic {
     width: 240px;
   }
 }
 
 @media (min-width: 640px) {
-  .nav__city-pic-container .nav__city-pic {
+  .nav__container .nav__city-pic-container .nav__city-pic {
     width: 250px;
   }
 }
 
 @media (min-width: 800px) {
-  .nav__city-pic-container .nav__city-pic {
+  .nav__container .nav__city-pic-container .nav__city-pic {
     width: 267px;
   }
 }
 
-.nav__city-pic-container .nav__city-pic-aside {
+.nav__container .nav__city-pic-container .nav__city-pic-aside {
   position: relative;
   font-family: 'Dr Sugiyama';
   color: #d4d4d4;
@@ -474,12 +474,12 @@
 }
 
 @media (min-width: 460px) {
-  .nav__city-pic-container .nav__city-pic-aside {
+  .nav__container .nav__city-pic-container .nav__city-pic-aside {
     width: 63px;
   }
 }
 
-.nav__city-pic-container .nav__city-pic-aside .nav__city-name {
+.nav__container .nav__city-pic-container .nav__city-pic-aside .nav__city-name {
   position: absolute;
   bottom: 50%;
   right: 50%;
@@ -488,7 +488,7 @@
 }
 
 @media (min-width: 460px) {
-  .nav__city-pic-container .nav__city-pic-aside .nav__city-name {
+  .nav__container .nav__city-pic-container .nav__city-pic-aside .nav__city-name {
     bottom: -8px;
     right: 5px;
     -webkit-transform: translate(0%, 0%);
@@ -498,13 +498,13 @@
 }
 
 @media (min-width: 640px) {
-  .nav__city-pic-container .nav__city-pic-aside .nav__city-name {
+  .nav__container .nav__city-pic-container .nav__city-pic-aside .nav__city-name {
     right: 2px;
     font-size: 22px;
   }
 }
 
-.nav__menu {
+.nav__container .nav__menu {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: menu;
@@ -519,29 +519,29 @@
           align-items: center;
 }
 
-.nav__menu .nav__list-container {
+.nav__container .nav__menu .nav__list-container {
   display: none;
 }
 
-.nav__menu .nav__menu-hamburger-icon {
+.nav__container .nav__menu .nav__menu-hamburger-icon {
   font-size: 22px;
   -webkit-animation: menu-icon-appears 0.3s linear both;
           animation: menu-icon-appears 0.3s linear both;
 }
 
-.nav__menu .nav__menu-hamburger-icon:hover {
+.nav__container .nav__menu .nav__menu-hamburger-icon:hover {
   cursor: pointer;
 }
 
-.nav__menu .nav__menu-hamburger-icon.nav__menu-hamburger-icon--not-active {
+.nav__container .nav__menu .nav__menu-hamburger-icon.nav__menu-hamburger-icon--not-active {
   display: none;
 }
 
-.nav__menu .nav__menu-close-icon {
+.nav__container .nav__menu .nav__menu-close-icon {
   display: none;
 }
 
-.nav__menu .nav__menu-close-icon.nav__menu-close-icon--active {
+.nav__container .nav__menu .nav__menu-close-icon.nav__menu-close-icon--active {
   color: black;
   display: block;
   font-size: 22px;
@@ -549,26 +549,26 @@
           animation: menu-icon-appears 0.3s linear both;
 }
 
-.nav__menu .nav__menu-close-icon.nav__menu-close-icon--active:hover {
+.nav__container .nav__menu .nav__menu-close-icon.nav__menu-close-icon--active:hover {
   cursor: pointer;
 }
 
 @media (min-width: 460px) {
-  .nav__menu {
+  .nav__container .nav__menu {
     grid-row: 2/-1;
     grid-column: 2/-1;
   }
-  .nav__menu .nav__menu-hamburger-icon {
+  .nav__container .nav__menu .nav__menu-hamburger-icon {
     display: none;
   }
-  .nav__menu .nav__menu-close-icon.nav__menu-close-icon--active {
+  .nav__container .nav__menu .nav__menu-close-icon.nav__menu-close-icon--active {
     display: none;
   }
-  .nav__menu .nav__list-container {
+  .nav__container .nav__menu .nav__list-container {
     display: block;
     padding-right: 5px;
   }
-  .nav__menu .nav__list-element-href {
+  .nav__container .nav__menu .nav__list-element-href {
     display: block;
     padding: 5px;
     text-decoration: none;
@@ -578,11 +578,11 @@
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
   }
-  .nav__menu .nav__list-element {
+  .nav__container .nav__menu .nav__list-element {
     display: inline-block;
     list-style: none;
   }
-  .nav__menu .nav__list-element:hover .nav__list-element-href {
+  .nav__container .nav__menu .nav__list-element:hover .nav__list-element-href {
     background-color: #52662b;
     color: white;
     border-radius: 5%;
@@ -590,18 +590,18 @@
 }
 
 @media (min-width: 640px) {
-  .nav__menu {
+  .nav__container .nav__menu {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .nav__menu .nav__list-element-href {
+  .nav__container .nav__menu .nav__list-element-href {
     font-size: 15px;
   }
 }
 
 @media (min-width: 800px) {
-  .nav__menu .nav__list-element-href {
+  .nav__container .nav__menu .nav__list-element-href {
     font-size: 16px;
   }
 }
